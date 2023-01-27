@@ -8,6 +8,6 @@
 <?php wp_head(); ?>
 <body>
 <header>
-    <h1>4W4-Création et développement Web</h1>
+    <h1 class="TitreUn">4W4-Création et développement Web</h1>
 </header>
 

@@ -1,5 +1,15 @@
 <?php 
 ?>
 <?php get_header();?>
-<h1>Bienvenue au cours de 4W4</h1>
-<?php get_footer();?>
+<main>
+<?php 
+if(have_posts()):
+    while(have_posts()): the_post();
+    the_title('<h1>','<h2>');
+    the_content();?>
+
+   <?php endwhile; 
+endif;
+?>
+</main> 
+<?php get_footer(); ?>
