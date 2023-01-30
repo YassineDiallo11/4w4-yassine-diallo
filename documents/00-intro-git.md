@@ -7,4 +7,15 @@
 - git commit -m "s2c1 on ecris les modifications"
 - git log
 - git log --oneline
-- git remote add origin(4w4)
+- git remote add origin(4w4) https://github.com/YassineDiallo11/4w4-yassine-diallo
+- git branch -m main (Change le nom de la branche master pour main)
+- git branch lab1
+- git checkout lab1(Pour changer de branche vers lab1)
+- git log --oneline(Les branches lab1 et main pointe vers le meme commit)
+- git checkout main
+- git push 4w4 main(On pousse la branche active main vers github dans le depot 4w4 vers la branche main)
+- git checkout lab1
+- git push 4w4 lab1
+- git branch lab 2
+- git checkout lab2 
+- git push 4w4 lab2 (Pousse la brabche active lab2 vers 4w4 dans la branche lab2 )
