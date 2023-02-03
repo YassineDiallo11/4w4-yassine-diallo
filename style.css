@@ -370,14 +370,14 @@ p {
 }
 
 a {
-  color: #aaa;
+  color: rgb(104, 101, 101);
   text-decoration: none;
 }
 a:visited {
-  color: blueviolet;
+  color: rgb(177, 210, 184);
 }
 a:hover {
-  color: #555;
+  color: rgb(4, 4, 4);
 }
 
 /* --------------------------------------------- composant */
