@@ -1,0 +1,43 @@
+.site_header{
+ 
+}
+
+.site_header_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(100, 116, 73);
+    box-shadow: rgba(189, 237, 134, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.menu-entete-container{//nav
+
+    .menu {//ul
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    
+    
+        .menu-item{
+            //li
+        color: rgb(255, 255, 255);
+        
+        
+    
+        a{
+            display: block;
+            margin: 8px;
+            justify-content: space-around;
+            font-size: 20px;
+            
+        }
+
+        h2{
+            align-items: center;
+        }
+        }
+        }
+    }
+
+   

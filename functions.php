@@ -21,4 +21,13 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
     ));
   }
   add_action('after_setup_theme', 'enregistrement_nav_menu', 0);
+/* ....................................add_theme_support*/
 
+add_theme_support('title-tag');
+add_theme_support('custom-logo',
+                    array(
+                      'height'=> 200,
+                      'width'=> 200,
+                    )
+);
+add_theme_support('title-tag');

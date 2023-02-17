@@ -1,0 +1,26 @@
+/*Les balise qu'on utilise dans la conversion des fichiers markdown*/
+
+ul,ol{}
+
+ul>li,
+ol>li{
+
+}
+
+ul>li {
+
+}
+
+ol>li{}
+
+ li::before{
+    background: aliceblue;
+    border-radius: 1ch;
+    
+ }
+pre{}
+code{}
+i{}
+blockquote{}
+hr{}
+strong{}

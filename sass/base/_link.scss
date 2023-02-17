@@ -1,12 +1,12 @@
 a{
-    color: rgb(104, 101, 101);
-    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
     
     &:visited{
-        color: rgb(177, 210, 184);
+        color: rgb(255, 255, 255);
         
     }
     &:hover{
-        color: rgb(4, 4, 4);
+        color: #9cc25a;
     }
 }

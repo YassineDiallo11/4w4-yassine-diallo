@@ -369,15 +369,21 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/*@import "base/espacement";*/
 a {
-  color: rgb(104, 101, 101);
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 a:visited {
-  color: rgb(177, 210, 184);
+  color: rgb(255, 255, 255);
 }
 a:hover {
-  color: rgb(4, 4, 4);
+  color: #9cc25a;
+}
+
+/*Les balise qu'on utilise dans la conversion des fichiers markdown*/
+li::before {
+  background: aliceblue;
+  border-radius: 1ch;
 }
 
 /* --------------------------------------------- composant */
@@ -387,6 +393,57 @@ a:hover {
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 3px solid rgb(210, 170, 210);
-  flex: 1 1 200px;
+  border: 2px solid #c7bbb8;
+  padding-top: 2px;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(255, 255, 255);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  justify-content: space-around;
+}
+
+.site_header_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(100, 116, 73);
+  box-shadow: rgba(189, 237, 134, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(255, 255, 255);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  margin: 8px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.menu-entete-container .menu .menu-item h2 {
+  align-items: center;
+}
+
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  border: 3px solid rgb(181, 218, 117);
+  background-color: rgb(100, 116, 73);
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

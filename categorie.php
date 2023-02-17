@@ -2,17 +2,17 @@
 ?>
 <?php get_header();?>
 <main>
-    <h3>front-page.php</h3>
+    <h3>category.php</h3>
     <section class="blocflex">
 <?php 
 if(have_posts()):
     while(have_posts()): the_post();?>
     <article>
-    <h3>
+    <h1>
     <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
-    </h3>
-   <p><?php if(is_category('cours')) echo "cours";?></p>
+    </h1>
    
+ 
  </article>
    <?php endwhile; 
 endif;
