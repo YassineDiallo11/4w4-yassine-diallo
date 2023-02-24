@@ -2,7 +2,7 @@
 ?>
 <?php get_header();?>
 <main>
-    <h3>front-page.php</h3>
+   
     <section class="blocflex">
 <?php 
 if(have_posts()):
@@ -11,7 +11,7 @@ if(have_posts()):
     <h3>
     <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
     </h3>
-   <p><?php if(is_category('cours')) echo "cours";?></p>
+    <?= wp_trim_words(get_the_excerpt(),5,"[...]"); ?>
    
  </article>
    <?php endwhile; 
@@ -19,4 +19,5 @@ endif;
 ?>
 </section>
 </main> 
+
 <?php get_footer(); ?>

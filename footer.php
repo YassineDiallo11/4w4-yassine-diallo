@@ -1,6 +1,7 @@
 <footer class="site__footer">
-<section>Colonne 1</section>
-<section>Colonne 2</section>
-<section>Colonne 3</section>
+<section>4w4</section>
+<section>Yassine Diallo</section>
+<section>Conception d'interface et développement web</section>
+
 </footer>
 <?php wp_footer(); ?>

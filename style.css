@@ -377,45 +377,84 @@ a:visited {
   color: rgb(255, 255, 255);
 }
 a:hover {
-  color: #9cc25a;
+  color: rgb(239, 191, 202);
 }
 
 /*Les balise qu'on utilise dans la conversion des fichiers markdown*/
 li::before {
-  background: aliceblue;
+  background: rgb(175, 175, 175);
   border-radius: 1ch;
 }
 
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 2px solid #c7bbb8;
-  padding-top: 2px;
+  background-color: rgb(58, 166, 166);
+  padding-top: 5px;
 }
 
-.menu-entete-container .menu {
+header {
+  background-color: rgb(97, 140, 183);
+  box-shadow: rgb(232, 226, 230) 0px 20px 80px -20px, rgb(255, 255, 255) 0px 30px 60px -30px, rgb(255, 255, 255) 0px -2px 6px 0px inset;
+}
+
+.menu {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+  align-items: center;
 }
-.menu-entete-container .menu .menu-item {
-  color: rgb(255, 255, 255);
+.menu #chkBurger {
+  display: none;
 }
-.menu-entete-container .menu .menu-item a {
+.menu #burger {
   display: block;
-  justify-content: space-around;
+  background-color: rgb(160, 139, 192);
+  padding: 1rem;
+  border-radius: 5rem;
+  transition: border-radius 0.1s;
+}
+.menu nav {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: couleur(fonce);
+  border-radius: 0 5rem 5rem 0;
+  transition: clip-path 1.2s;
+  clip-path: ellipse(50% 100% at -50% 50%);
+}
+.menu nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu nav ul li a {
+  opacity: 0;
+  display: block;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s, opacity 0.1s;
+  border-radius: 50%;
+  color: rgb(150, 113, 211);
+}
+.menu nav ul li a:hover {
+  background-color: rgb(50, 56, 68);
+}
+.menu nav ul li a img {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .site_header_logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(100, 116, 73);
-  box-shadow: rgba(189, 237, 134, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .menu-entete-container .menu {
@@ -432,9 +471,6 @@ li::before {
   justify-content: space-around;
   font-size: 20px;
 }
-.menu-entete-container .menu .menu-item h2 {
-  align-items: center;
-}
 
 .blocflex {
   display: grid;
@@ -443,7 +479,7 @@ li::before {
   margin: 2rem;
 }
 .blocflex article {
-  border: 3px solid rgb(181, 218, 117);
-  background-color: rgb(100, 116, 73);
+  border-radius: 25% 10%;
+  background-color: rgb(97, 140, 183);
   padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

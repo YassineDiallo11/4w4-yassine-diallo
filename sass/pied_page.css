@@ -1,9 +1,11 @@
 .site__footer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 2px solid #c7bbb8;
-  padding-top: 2px;
+  background-color: rgb(58, 166, 166);
+  padding-top: 5px;
 }/*# sourceMappingURL=pied_page.css.map */
