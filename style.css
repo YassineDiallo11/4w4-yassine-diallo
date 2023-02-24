@@ -401,7 +401,7 @@ li::before {
 
 header {
   background-color: rgb(97, 140, 183);
-  box-shadow: rgb(232, 226, 230) 0px 20px 80px -20px, rgb(255, 255, 255) 0px 30px 60px -30px, rgb(255, 255, 255) 0px -2px 6px 0px inset;
+  box-shadow: rgb(255, 255, 255) 0px 20px 80px -20px, rgb(255, 255, 255) 0px 30px 60px -30px, rgb(255, 255, 255) 0px -2px 6px 0px inset;
 }
 
 .menu {
