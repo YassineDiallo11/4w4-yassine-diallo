@@ -1,11 +1,12 @@
 
 .site_header{
- 
+ margin-bottom: 2rem;
 }
 
 .site_header_logo{
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
    
 }
@@ -13,7 +14,7 @@
 .menu-entete-container{//nav
 
     .menu {//ul
-    display: flex;
+        
     list-style-type: none;
     justify-content: space-around;
     
@@ -31,8 +32,6 @@
             font-size: 20px;
             
         }
-
-       
         }
         }
     }
