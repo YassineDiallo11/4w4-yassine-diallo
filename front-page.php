@@ -1,23 +1,32 @@
-<?php 
+<?php
+/**
+ * Modèle par défaut
+ * 
+ */
 ?>
-<?php get_header();?>
+<?php get_header(); ?>
 <main>
-   
+    <h3 class="bienvenue">Bienvenue à vous !!!</h3>
     <section class="blocflex">
-<?php 
-if(have_posts()):
-    while(have_posts()): the_post();?>
-    <article>
-    <h3>
-    <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
-    </h3>
-    <?= wp_trim_words(get_the_excerpt(),5,"[...]"); ?>
-   
- </article>
-   <?php endwhile; 
-endif;
-?>
-</section>
-</main> 
+    <?php
+        if (have_posts()): 
+            while (have_posts()) : the_post(); 
+                if (in_category('galerie')){
+                 //get_template_part("template-parts/categorie", "galerie");
+                 the_content();
+                }
+                else {
+                    get_template_part("template-parts/categorie", "4w4");  
+                }
+                    $ma_categorie = "4w4";
+                    if (in_category('galerie')){
+                        $ma_categorie = "galerie";  
+                    }    
+                 get_template_part("template-parts/categorie", $ma_categorie);
 
+             endwhile;
+        endif;    
+    ?>
+    </section>
+</main>
 <?php get_footer(); ?>

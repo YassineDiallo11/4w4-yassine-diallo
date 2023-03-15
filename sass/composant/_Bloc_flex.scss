@@ -1,19 +1,43 @@
+
+//Message de bienvenue
+.bienvenue{
+  font-size: 3.5em;
+  font-family: 'Lavishly Yours', cursive;
+  margin-left: 45vw;
+  border-bottom: solid 5px white;
+  color: rgb(255, 255, 255);
+
+  @media screen and (max-width:$largeur_tablette) {
+    font-size: 2em;
+  font-family: 'Lavishly Yours', cursive;
+  margin-left: 45vw;
+  border-bottom: solid 5px white;
+  color: rgb(255, 255, 255);
+}
+}
+
 .blocflex {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    
+    //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     // Cette déclaration sera meilleur quand min() sera mieux supporté
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
     margin: 2rem;
-  
-    article {
+  }
+  .blocflex__article {
+      flex: 1 0 300px;
       border-radius: 20% 11% ;
-      background-color:  rgb(97, 140, 183);
+      background-color:  rgb(138, 138, 138);
       padding: 1rem;
       //box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    .blocflex__galerie{
+      flex: 1 0 100%;
     }
 
     #text{
       color: white;
     }
-  }
+  

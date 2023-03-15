@@ -322,11 +322,11 @@ template {
 
 /* --------------------------------------------- base */
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-family: "Lavishly Yours", cursive;
 }
 
 h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  font-family: "Lavishly Yours", cursive;
 }
 
 h3 {
@@ -371,13 +371,13 @@ p {
 
 /*@import "base/espacement";*/
 a {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 a:visited {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 a:hover {
-  color: rgb(239, 191, 202);
+  color: #ffffff;
 }
 
 /*Les balise qu'on utilise dans la conversion des fichiers markdown*/
@@ -398,25 +398,55 @@ li::before {
   padding-top: 5px;
 }
 
-header {
-  background-color: rgb(97, 140, 183);
-  border: 5px solid white;
-}
-
-.site_header {
-  margin-bottom: 2rem;
-}
-
 .site_header_logo {
+  height: 20vh;
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
 }
 
+#chkMenu:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+.menu__recherche {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.menu-entete-container {
+  transform: translateX(300px);
+  transition: transform;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container {
+    transform: translateX(0px);
+  }
+}
 .menu-entete-container .menu {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(255, 255, 255);
@@ -424,22 +454,73 @@ header {
 .menu-entete-container .menu .menu-item a {
   display: block;
   margin: 8px;
-  justify-content: space-around;
-  font-size: 20px;
+}
+
+/* ////////////////////////////////////////// zone de recherche */
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  .recherche__input {
+    display: none;
+  }
+}
+
+/* /////////////////////////// Bouton burger*/
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkMenu {
+  display: none;
+}
+
+.bienvenue {
+  font-size: 3.5em;
+  font-family: "Lavishly Yours", cursive;
+  margin-left: 45vw;
+  border-bottom: solid 5px white;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 800px) {
+  .bienvenue {
+    font-size: 2em;
+    font-family: "Lavishly Yours", cursive;
+    margin-left: 45vw;
+    border-bottom: solid 5px white;
+    color: rgb(255, 255, 255);
+  }
 }
 
 .blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin: 2rem;
 }
-.blocflex article {
+
+.blocflex__article {
+  flex: 1 0 300px;
   border-radius: 20% 11%;
-  background-color: rgb(97, 140, 183);
+  background-color: rgb(138, 138, 138);
   padding: 1rem;
 }
-.blocflex #text {
+
+.blocflex__galerie {
+  flex: 1 0 100%;
+}
+
+#text {
   color: white;
 }
 
@@ -456,27 +537,18 @@ header {
 }
 
 /** Mise en page général avec display:grid */
-.site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
-  background-color: rgb(239, 239, 239);
-}
-@media screen and (min-width: 768px) {
-  .site {
-    grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "aside main" ". main" "footer footer";
-  }
-}
-
 .site__header {
+  height: 20vh;
+  overflow-x: hidden;
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(97, 140, 183);
+  background-color: #2D3192;
+  border-bottom-left-radius: 120px;
+  border-bottom: solid 6px white;
 }
 
 .site__main {
+  background-color: rgb(199, 199, 199);
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
@@ -486,15 +558,30 @@ header {
 }
 
 .site__aside {
+  height: 100vh;
   grid-area: aside;
-  background-color: rgb(97, 140, 183);
-  border-radius: 2% 20%;
+  background-color: rgb(138, 138, 138);
 }
 
-h3 {
-  color: aliceblue;
+.site {
+  width: 100vw;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+  row-gap: 50px;
+  background-color: rgb(199, 199, 199);
+}
+@media screen and (min-width: 768px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" ". main" "footer footer";
+  }
 }
 
-li {
-  color: aliceblue;
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "aside" "main" "footer";
+  }
 }/*# sourceMappingURL=style.css.map */
