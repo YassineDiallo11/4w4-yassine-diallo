@@ -494,7 +494,7 @@ li::before {
 }
 @media screen and (max-width: 800px) {
   .bienvenue {
-    font-size: 2em;
+    font-size: 3em;
     font-family: "Lavishly Yours", cursive;
     margin-left: 45vw;
     border-bottom: solid 5px white;
