@@ -17,13 +17,15 @@ if(is_front_page()){
 <section class="site_header_logo">
 <?php the_custom_logo() ?>
 <div class="menu__recherche">
+
 <input type="checkbox" id="chkMenu">
     <?php wp_nav_menu(array(
     "menu"=>"entete",
     "container"=>"nav"
      ))?>
-      <?php get_search_form(); ?>
-      <label class="ligneMenuBurger" class="burger" for="chkMenu"><img  src="https://cdn-icons-png.flaticon.com/512/5461/5461272.png" width="30" height="30"></label>
+      
+      <label class="ligneMenuBurger" class="burger" for="chkMenu"><img  src="https://cdn-icons-png.flaticon.com/512/5461/5461272.png" width="40" height="40"></label>
+        <?php get_search_form(); ?>
     </div>
 </section>
 </header>

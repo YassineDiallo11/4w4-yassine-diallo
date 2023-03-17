@@ -1,63 +1,69 @@
-
-/** Mise en page général avec display:grid */
-
+/**
+*  Mise en page général avec display:grid
+*/
 .site__header {
-    height: 20vh;
-    overflow-x: hidden;
-    grid-area: header;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color:  #2D3192;
-    border-bottom-left-radius: 120px;
-    border-bottom: solid 6px white;
-  }
+  overflow-x: hidden;
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color:  #2D3192;
+  border-bottom-left-radius: 120px;
+  border-bottom: solid 6px white;
+}
+
+.site__main {
+  grid-area: main;
+  background-color:rgb(218, 218, 218);
   
-  .site__main {
-    background-color:   rgb(199, 199, 199);
-    grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color:  #2D3192;
+}
+.site__aside {
+  grid-area: aside;
+  background-color:  #2D3192;
+  border-top-right-radius: 120px;
+  border-top: solid 6px white;
+  border-bottom-left-radius: 120px;
+  border-bottom: solid 6px white;
+  border-bottom-right-radius: 120px;
+  border-bottom: solid 6px white;
+}
+.site {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  // row-gap: 50px;
+  background-color:rgb(218, 218, 218);
+  @media screen and (min-width: $largeur_bureau) {
+      grid-template-columns: 20% auto;
+      grid-template-areas:
+      "header header"
+      "aside main"
+     /*  ". main" */
+      "footer footer";
   }
-  
-  .site__footer {
-    grid-area: footer;
-    
-    
-  }
-  .site__aside{
-    height: 100vh;
-    grid-area: aside;
-    background-color:  rgb(138, 138, 138);
-   
-   
-  }
-  .site {
-    width: 100vw;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    row-gap: 50px;
-    background-color: rgb(199, 199, 199);
-    @media screen and (min-width: 768px ) {
-        grid-template-columns:20% auto;
-        grid-template-areas:
-          "header header"
-          "aside main"
-          ". main"
-          "footer footer";
-    }
-  }
+}
+.h3_changement{
+  color: white;
+}
 .no-aside {
-  @media screen and (min-width: 1000px ) {
-  
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  @media screen and (min-width: $largeur_bureau) {
     grid-template-columns: auto;
     grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
+    "header"
+    "main"
+    "footer";
 }
 }

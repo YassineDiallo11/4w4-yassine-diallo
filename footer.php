@@ -1,5 +1,10 @@
 <footer class="site__footer">
-<section>4w4</section>
+<?php the_custom_logo() ?>
+
+<?php wp_nav_menu(array(
+    "menu"=>"footer",
+    "container"=>"nav"
+     ))?>
 <section>Yassine Diallo</section>
 <section>Conception d'interface et développement web</section>
 

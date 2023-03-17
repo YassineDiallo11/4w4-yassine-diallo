@@ -52,10 +52,37 @@ transition: transform;
     
         }
     }
+    /* ////////////////////////////////////////// zone du MenuBurger*/
+
+/* /////////////////////////// Bouton burger*/
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    @media screen and (min-width : $largeur_tablette) {
+        display: none;
+    }
+
+}
+
+.ligneMenuBurger{
+    @media screen and (min-width:$largeur_tablette) {
+        display: none;
+    }
+}
+#chkMenu{
+    display: none;
+}
+
 
 
     /* ////////////////////////////////////////// zone de recherche */
-
+    .menu__recherche {
+        display: flex;
+        flex-direction: row;
+      }
+      
     .recherche{
         display: flex;
         flex-wrap: nowrap;

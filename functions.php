@@ -28,7 +28,7 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
   }
   add_action('after_setup_theme', 'enregistrement_nav_menu', 0);
 
-/*...........................................Modifications des choix de cours 
+/*...........................................Modifications des choix de cours */
   function personnalisation_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'cours' par l'identifiant de votre menu
     if($args->menu == 'cours') {
