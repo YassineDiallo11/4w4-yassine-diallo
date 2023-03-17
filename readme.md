@@ -10,6 +10,6 @@
 #### Références
 - https://eddytuto.ca/
 - https://developer.wordpress.org/themes/
-- https://tools.siteground.com/dashboard?siteId=S2c3eGEzNE9JZz09
+- https://cidweb4.sg-host.com/category/cours/
 
 
