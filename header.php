@@ -24,7 +24,7 @@ if(is_front_page()){
     "container"=>"nav"
      ))?>
       
-      <label class="ligneMenuBurger" class="burger" for="chkMenu"><img  src="https://cdn-icons-png.flaticon.com/512/5461/5461272.png" width="40" height="40"></label>
+      <label class="ligneMenuBurger" class="burger" for="chkMenu"> <img   src="https://cdn-icons-png.flaticon.com/512/5461/5461272.png" width="40" height="40"></label>
         <?php get_search_form(); ?>
     </div>
 </section>
