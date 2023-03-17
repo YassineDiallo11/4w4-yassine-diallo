@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template part pour afficher un blocflex note de cours 4w4  
+ * Template part pour afficher un blocflex note de cours 4w4....  
 */
 
 $titre = get_the_title(); 
