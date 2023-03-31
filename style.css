@@ -527,6 +527,7 @@ footer {
 .blocflex {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 2rem;
   margin: 2rem;
 }
@@ -538,8 +539,13 @@ footer {
   padding: 1rem;
 }
 
+.blocflex__article:hover {
+  border-color: aliceblue;
+  background-color: #2D3192;
+}
+
 .blocflex__galerie {
-  flex: 1 0 100%;
+  flex: 2 0 100%;
 }
 
 #text {

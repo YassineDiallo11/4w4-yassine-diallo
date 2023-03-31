@@ -37,6 +37,7 @@ $sigle = substr($title,0,7);
 $title = substr($title,7);
 $title = "<code>".$sigle ."</code>"."<p>". wp_trim_words($title, 3, ' ... ')."<p>";
 }
+
 return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);

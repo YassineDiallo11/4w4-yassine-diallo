@@ -17,9 +17,10 @@
 }
 
 .blocflex {
+  
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
     //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     // Cette déclaration sera meilleur quand min() sera mieux supporté
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
@@ -27,14 +28,21 @@
     margin: 2rem;
   }
   .blocflex__article {
+    
       flex: 1 0 300px;
       border-radius: 20% 11% ;
       background-color:  rgb(138, 138, 138);
       padding: 1rem;
       //box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
+    .blocflex__article:hover {
+      border-color: aliceblue;
+      background-color:  #2D3192;
+      
+      
+    }
     .blocflex__galerie{
-      flex: 1 0 100%;
+      flex: 2 0 100%;
     }
 
     #text{
