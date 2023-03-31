@@ -4,7 +4,7 @@ $sigle = substr($titre,0,7);
 $titre_long = substr($titre,7,-5);
 $duree = substr($titre,strpos($titre,'('))?>
 
-<article > 
+<article class="search" > 
     <h3><a href="<?php the_permalink(); ?>"> 
     <?= $sigle ?></a></h3> <h5>
         <?= $titre_long ?></h5> <p>

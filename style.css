@@ -552,6 +552,16 @@ footer {
   color: white;
 }
 
+.site__main {
+  width: 100vw;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 /* --------------------------------------------- layout */
 footer {
   border-top: solid white 5px;
