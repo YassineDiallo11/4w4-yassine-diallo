@@ -1,4 +1,7 @@
-
+/**
+ * Search page
+ * 
+ */
 <?php get_header();?>
 <main class="site__main">
 
