@@ -552,10 +552,6 @@ footer {
   color: white;
 }
 
-.site__main {
-  width: 100vw;
-}
-
 .search {
   display: flex;
   flex-wrap: wrap;
