@@ -1,8 +1,30 @@
 
-
 .search{
+    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+}
 
+.search_1{
+    background-color: gray;
+    border-bottom: white 5px solid;
+    border-top: white 5px solid;
+    border-left: white 5px solid;
+    border-right: white 5px solid;
+}
+.Search_2{
+    padding-left: 20px;
+    
+}
+.searchTout{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.Description{
+    padding-left: 50px;
+}
+.texte{
+    padding-left: 60px;
 }
