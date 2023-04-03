@@ -33,6 +33,11 @@
       border-radius: 20% 11% ;
       background-color:  rgb(138, 138, 138);
       padding: 1rem;
+      
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(border.png) 20% round;
+      
       //box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
     .blocflex__article:hover {

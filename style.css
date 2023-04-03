@@ -537,6 +537,9 @@ footer {
   border-radius: 20% 11%;
   background-color: rgb(138, 138, 138);
   padding: 1rem;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 20% round;
 }
 
 .blocflex__article:hover {
