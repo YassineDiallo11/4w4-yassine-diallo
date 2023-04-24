@@ -4,6 +4,11 @@ footer{
     background-color:  #2D3192;
 
 }
+.colonne2{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
 .colonne1{
     display: flex;
     padding: 30px;
@@ -47,8 +52,9 @@ border: 5px solid rgb(162, 163, 163);
     height: 2px;
 }
 .Choix a{
+    width: 80vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     background-color: #ad93a5;
