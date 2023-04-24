@@ -388,13 +388,35 @@ li::before {
 
 /* --------------------------------------------- composant */
 footer {
-  border-top: solid white 5px;
+  height: 100vh;
+  border-top: solid white 3px;
   background-color: #2D3192;
 }
 
+.colonne1 {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.colonne1 section {
+  padding: 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-between;
+}
+
 .site__footer {
+  border: 5px solid rgb(162, 163, 163);
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -405,7 +427,21 @@ footer {
 }
 
 .menu-footer-container {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.Ligne {
+  background-color: #ffffff;
+  width: 90vw;
+  height: 2px;
+}
+
+.Choix a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ad93a5;
 }
 
 .site_header_logo {
@@ -537,9 +573,6 @@ footer {
   border-radius: 20% 11%;
   background-color: rgb(138, 138, 138);
   padding: 1rem;
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(border.png) 20% round;
 }
 
 .blocflex__article:hover {
@@ -585,15 +618,48 @@ footer {
   padding-left: 60px;
 }
 
+.menu-evenement-container .menu {
+  display: flex;
+}
+.menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gray;
+  height: 50px;
+}
+
 /* --------------------------------------------- layout */
 footer {
-  border-top: solid white 5px;
+  height: 100vh;
+  border-top: solid white 3px;
   background-color: #2D3192;
 }
 
+.colonne1 {
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.colonne1 section {
+  padding: 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-between;
+}
+
 .site__footer {
+  border: 5px solid rgb(162, 163, 163);
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -604,7 +670,21 @@ footer {
 }
 
 .menu-footer-container {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.Ligne {
+  background-color: #ffffff;
+  width: 90vw;
+  height: 2px;
+}
+
+.Choix a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ad93a5;
 }
 
 /**

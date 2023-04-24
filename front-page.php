@@ -6,6 +6,14 @@
 ?>
 <?php get_header(); ?>
 <main>
+
+<section class="blockflex">
+<?php wp_nav_menu(array(
+    "menu"=>"evenement",
+    "container"=>"nav"
+));?>
+</section>
+
     <h3 class="bienvenue">Bienvenue à vous !!!</h3>
     <section class="blocflex">
     <?php
@@ -22,7 +30,7 @@
                     if (in_category('galerie')){
                         $ma_categorie = "galerie";  
                     }    
-
+                    
              endwhile;
         endif;    
     ?>
