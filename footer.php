@@ -1,10 +1,12 @@
 <footer class="site__footer">
+
+
 <div class="colonne1">
-<?php the_custom_logo() ?>
 <section>Yassine Diallo</section>
 <section>Conception d'interface et développement web</section>
-
 </div>
+
+<?php the_custom_logo() ?>
 <div class="Choix">
 <?php wp_nav_menu(array(
     "menu"=>"footer",
@@ -14,6 +16,11 @@
 
 
 
+<section>
+    <div class="sidebar">
+    <?php  dynamic_sidebar('footer_2'); ?>  
+    </div>
+</section>
 <div class="Ligne"></div>
 
 <div class="colonne2">
@@ -22,13 +29,9 @@
     <?php  dynamic_sidebar('footer_1'); ?>  
     </div>
 </section>
-
-<section>
-    <div class="sidebar">
-    <?php  dynamic_sidebar('footer_2'); ?>  
-    </div>
-</section>
-
 </div>
+
+
+
 </footer>
 <?php wp_footer(); ?>
