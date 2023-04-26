@@ -387,10 +387,6 @@ li::before {
 }
 
 /* --------------------------------------------- composant */
-footer {
-  background-color: #2D3192;
-}
-
 .site__footer {
   height: 100vh;
   width: 100vw;
@@ -400,30 +396,23 @@ footer {
   justify-content: space-around;
 }
 
-div.colonne2 {
+.colonne2 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
-  padding: 30px;
+  margin: 10px;
   color: white;
 }
 
-.colonne1 {
-  width: 80vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 12px;
+div#block-15.widget.widget_block {
+  margin-right: 100px;
 }
 
-.colonne1 section {
-  padding: 10px;
-  color: #2D3192;
-  font-size: 1.6em;
+#menu-footer.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .sidebar {
@@ -457,6 +446,15 @@ p {
   justify-content: left;
   flex-direction: row;
   padding: 10px;
+}
+
+.logo {
+  width: 100vw;
+  background-color: #2D3192;
+}
+
+cite {
+  color: rgb(169, 168, 168);
 }
 
 .site_header_logo {
@@ -645,10 +643,6 @@ p {
 }
 
 /* --------------------------------------------- layout */
-footer {
-  background-color: #2D3192;
-}
-
 .site__footer {
   height: 100vh;
   width: 100vw;
@@ -658,30 +652,23 @@ footer {
   justify-content: space-around;
 }
 
-div.colonne2 {
+.colonne2 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
-  padding: 30px;
+  margin: 10px;
   color: white;
 }
 
-.colonne1 {
-  width: 80vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 12px;
+div#block-15.widget.widget_block {
+  margin-right: 100px;
 }
 
-.colonne1 section {
-  padding: 10px;
-  color: #2D3192;
-  font-size: 1.6em;
+#menu-footer.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .sidebar {
@@ -715,6 +702,15 @@ p {
   justify-content: left;
   flex-direction: row;
   padding: 10px;
+}
+
+.logo {
+  width: 100vw;
+  background-color: #2D3192;
+}
+
+cite {
+  color: rgb(169, 168, 168);
 }
 
 /**
