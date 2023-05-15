@@ -387,6 +387,10 @@ li::before {
 }
 
 /* --------------------------------------------- composant */
+footer {
+  background-color: #ffffff;
+}
+
 .site__footer {
   height: 100vh;
   width: 100vw;
@@ -556,6 +560,10 @@ cite {
   }
 }
 
+.custom-background {
+  background-color: transparent;
+}
+
 .bienvenue {
   font-size: 3.5em;
   font-family: "Lavishly Yours", cursive;
@@ -631,18 +639,50 @@ cite {
   padding-left: 60px;
 }
 
+.menu-evenement-container {
+  width: 100vw;
+  height: 60vh;
+}
 .menu-evenement-container .menu {
   display: flex;
+  flex-direction: column;
 }
 .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
   justify-content: space-between;
-  border: 1px solid gray;
-  height: 50px;
+  height: 40px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.menu-evenement-container .menu .menu-item a {
+  margin-left: 100px;
+  color: #2D3192;
+  font-size: 1.5rem;
+  font-family: cursive;
+  text-decoration: none;
+}
+
+main.site__main {
+  display: flex;
+  flex-direction: column;
+}
+main.site__main h1 {
+  color: #2D3192;
+  margin-left: 300px;
+}
+main.site__main img {
+  margin-left: 350px;
 }
 
 /* --------------------------------------------- layout */
+footer {
+  background-color: #ffffff;
+}
+
 .site__footer {
   height: 100vh;
   width: 100vw;

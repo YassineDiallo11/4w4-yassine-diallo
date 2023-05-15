@@ -1,4 +1,6 @@
-
+.custom-background{
+  background-color: transparent;
+}
 //Message de bienvenue
 .bienvenue{
   font-size: 3.5em;
@@ -21,9 +23,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // Cette déclaration sera meilleur quand min() sera mieux supporté
-    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
     margin: 2rem;
   }

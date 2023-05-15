@@ -5,16 +5,25 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="custom-background">
 
-<section class="blockflex">
+<section class="Evenement">
+    
 <?php wp_nav_menu(array(
     "menu"=>"evenement",
     "container"=>"nav"
 ));?>
+
+<?php wp_nav_menu(array(
+    "menu"=>"bloc-archive",
+    "container"=>"nav"
+));?>
+
+
+
 </section>
 
-    <h3 class="bienvenue">Bienvenue à vous !!!</h3>
+
     <section class="blocflex">
     <?php
         if (have_posts()): 

@@ -1,13 +1,47 @@
 .menu-evenement-container{//nav
+
+
+    
+    width: 100vw;
+    height: 60vh;
     .menu{//ul
         display: flex;
+        flex-direction: column;
+
+        
         .menu-item{//li
             display: flex;
             flex-direction: column;
+            padding-top: 30px;
             justify-content: space-between;
-            border: 1px solid gray;
-            height: 50px;
+            height: 40px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            a{
+                margin-left: 100px;
+                color: #2D3192;
+                font-size:1.5rem;
+                font-family:cursive;
+                text-decoration: none;
+            }
 
         }
+    }
+}
+
+main.site__main{
+    display: flex;
+    flex-direction: column;
+
+
+    h1{
+        color: #2D3192;
+        margin-left: 300px;
+    }
+    img{
+        margin-left: 350px;
     }
 }

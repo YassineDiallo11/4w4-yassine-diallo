@@ -41,17 +41,15 @@ $title = "<code>".$sigle ."</code>"."<p>". wp_trim_words($title, 3, ' ... ')."<p
 return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
-/* ....................................add_theme_support*/ 
-
-add_theme_support('title-tag');
-add_theme_support('custom-logo',
+/*----------------------------------------- add_theme_support() */
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo',
                     array(
-                      'height'=> 200,
-                      'width'=> 200,
-                    )
-);
-add_theme_support('title-tag');
-
+                        'height' => 150,
+                        'width'  => 150,
+) );
+add_theme_support( 'post-thumbnails' );
+add_theme_support('custom-background');
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
@@ -61,13 +59,15 @@ add_theme_support('title-tag');
  * @param WP_query  $query la requête principal de WP
  */
 function cidweb_modifie_requete_principal( $query ) {
-  if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-    $query->set( 'category_name', '4w4' );
-    $query->set( 'orderby', 'title' );
-    $query->set( 'order', 'ASC' );
-    }
-   }
-   add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+    if (    $query->is_home()
+            && $query->is_main_query()
+            && ! is_admin() ) {
+      $query->set( 'category_name', '4w4' );
+      $query->set( 'orderby', 'title' );
+      $query->set( 'order', 'ASC' );
+      }
+     }
+     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
 
 /* -----------------------------------------Enregistrer le sidebar  ---*/
