@@ -592,8 +592,20 @@ cite {
 .blocflex__article {
   flex: 1 0 300px;
   border-radius: 20% 11%;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
+}
+.blocflex__article p {
+  color: #2D3192;
+  font-size: 20px;
+}
+.blocflex__article a {
+  color: #2D3192;
+  margin-left: 180px;
+}
+.blocflex__article h5 {
+  font-size: 20px;
+  color: #2D3192;
 }
 
 .blocflex__article:hover {
@@ -651,16 +663,22 @@ cite {
   flex-direction: column;
 }
 .Evenement #menu-item-226 {
+  border-radius: 20px;
   background-color: #2D3192;
   border-bottom: solid white 30px;
+  border-bottom-left-radius: 40px;
 }
 .Evenement #menu-item-231 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
+  border-radius: 20px;
+  border-bottom-left-radius: 40px;
 }
 .Evenement #menu-item-250 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
+  border-radius: 20px;
+  border-bottom-left-radius: 40px;
 }
 .Evenement img.menu-thumbnail {
   padding-left: 40px;
@@ -671,6 +689,30 @@ cite {
   font-size: 1.5rem;
   font-family: cursive;
   text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.Archive {
+  height: 60px;
+}
+.Archive #menu-bloc-archive {
+  display: flex;
+  flex-direction: row;
+}
+.Archive a {
+  height: 40px;
+  background-color: #2D3192;
+  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 30px;
+  margin-left: 80px;
+  font-family: cursive;
+  text-decoration: none;
+}
+.Archive ::marker {
+  color: transparent;
 }
 
 main.site__main {
@@ -679,10 +721,15 @@ main.site__main {
 }
 main.site__main h1 {
   color: #2D3192;
-  margin-left: 300px;
+  margin-left: 170px;
+  font-family: cursive;
 }
 main.site__main img {
-  margin-left: 350px;
+  margin-left: 230px;
+  padding-top: 10px;
+}
+main.site__main p {
+  font-size: 20px;
 }
 
 /* --------------------------------------------- layout */
@@ -784,6 +831,8 @@ cite {
 }
 
 .site__aside {
+  display: flex;
+  flex-direction: column;
   grid-area: aside;
   background-color: #2D3192;
   border-top-right-radius: 120px;
@@ -792,6 +841,25 @@ cite {
   border-bottom: solid 6px white;
   border-bottom-right-radius: 120px;
   border-bottom: solid 6px white;
+}
+.site__aside h3 {
+  font-size: 20px;
+  margin-left: 5px;
+  color: white;
+}
+.site__aside #menu-4w4 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.site__aside ::marker {
+  color: transparent;
+}
+.site__aside .menu-cours-container p {
+  font-size: 18px;
+}
+.site__aside .menu-cours-container code {
+  font-size: 20px;
 }
 
 .MainRecherche {
@@ -803,7 +871,7 @@ cite {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  background-color: transparent;
+  background-color: #bdbfed;
 }
 @media screen and (min-width: 1000px) {
   .site {

@@ -23,6 +23,8 @@
   background-color:  #2D3192;
 }
 .site__aside {
+  display: flex;
+  flex-direction: column;
   grid-area: aside;
   background-color:  #2D3192;
   border-top-right-radius: 120px;
@@ -31,6 +33,30 @@
   border-bottom: solid 6px white;
   border-bottom-right-radius: 120px;
   border-bottom: solid 6px white;
+
+  h3{
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
+  }
+  #menu-4w4{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  ::marker{
+    color: transparent;
+  }
+
+  .menu-cours-container{
+
+    p{
+      font-size: 18px;
+    }
+    code{
+      font-size: 20px;
+    }
+  }
 }
  .MainRecherche{
   background-color: #2D3192;
@@ -45,8 +71,7 @@
     "main"
     "footer";
   // row-gap: 50px;
-  background-color:transparent
-  ;
+  background-color: #bdbfed ;
   @media screen and (min-width: $largeur_bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:

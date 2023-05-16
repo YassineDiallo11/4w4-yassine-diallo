@@ -17,7 +17,6 @@
   color: rgb(255, 255, 255);
 }
 }
-
 .blocflex {
   
     display: flex;
@@ -30,8 +29,22 @@
     
       flex: 1 0 300px;
       border-radius: 20% 11% ;
-      background-color:  rgb(138, 138, 138);
+      background-color:  rgb(255, 255, 255);
       padding: 1rem;
+
+      p{
+        color: #2D3192;
+        font-size: 20px;
+      }
+      a{
+        color: #2D3192;
+        margin-left: 180px;
+      }
+
+      h5{
+        font-size: 20px;
+        color: #2D3192;
+      }
       
       //box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
