@@ -41,6 +41,28 @@ $title = "<code>".$sigle ."</code>"."<p>". wp_trim_words($title, 3, ' ... ')."<p
 return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
+
+/**
+ * Modifie les items du menu « evenement » 
+ * pour inclure l'image en avant plan du post, 
+ * la description du choix et le titre du choix
+ */
+
+ function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
+  if ( 'evenement' == $args->menu ||
+       'bloc-archive' == $args->menu){
+      $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
+      if ( $post_thumbnail_id ) {
+          $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
+          $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . '</span><img src="' . esc_url( $post_thumbnail_url[0] ) . '" class="menu-thumbnail" />', $item_output );
+      } else {
+          $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' .    '</span><span class="image"></span>', $item_output );
+      }
+  }
+  return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 4, 4 );
+
 /*----------------------------------------- add_theme_support() */
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo',
@@ -49,7 +71,7 @@ add_theme_support( 'custom-logo',
                         'width'  => 150,
 ) );
 add_theme_support( 'post-thumbnails' );
-add_theme_support('custom-background');
+add_theme_support('Arrière-plan');
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

@@ -13,15 +13,17 @@
     "menu"=>"evenement",
     "container"=>"nav"
 ));?>
+</section>
 
+<section class="Archive">
 <?php wp_nav_menu(array(
     "menu"=>"bloc-archive",
     "container"=>"nav"
 ));?>
-
-
-
 </section>
+
+
+
 
 
     <section class="blocflex">
