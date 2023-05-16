@@ -27,7 +27,7 @@
 .menu-entete-container{//nav
 transform: translateX(300px);
 transition: transform;
-@media screen and (min-width: $largeur_tablette ){
+@media screen and (min-width: $largeur_tabletteDeux ){
     transform: translateX(0px);
 }
     .menu {//ul
@@ -36,7 +36,7 @@ transition: transform;
     list-style-type: none;
     align-items:flex-end;
     justify-content: flex-start;
-    @media screen and (min-width:$largeur_tablette) {
+    @media screen and (min-width:$largeur_tabletteDeux) {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -60,14 +60,14 @@ transition: transform;
     justify-content: center;
     align-items: center;
     width: 30px;
-    @media screen and (min-width : $largeur_tablette) {
+    @media screen and (min-width : $largeur_tabletteDeux) {
         display: none;
     }
 
 }
 
 .ligneMenuBurger{
-    @media screen and (min-width:$largeur_tablette) {
+    @media screen and (min-width:$largeur_tabletteDeux) {
         display: none;
     }
 }
@@ -81,6 +81,11 @@ transition: transform;
     .menu__recherche {
         display: flex;
         flex-direction: row;
+        @media screen and (min-width: $largeur_bureau) {
+
+            margin-right: 150px;
+             
+         }
       }
       
     .recherche{
@@ -88,7 +93,7 @@ transition: transform;
         flex-wrap: nowrap;
     }
     .recherche__input{
-        @media screen and (max-width:$largeur_tablette) {
+        @media screen and (max-width:$largeur_tabletteDeux) {
             display: none;
         }
     }

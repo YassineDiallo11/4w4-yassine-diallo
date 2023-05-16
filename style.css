@@ -398,13 +398,28 @@ footer .site__footer {
 footer .colonne2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
+  padding-left: 10px;
   color: white;
+}
+@media screen and (min-width: 750px) {
+  footer .colonne2 {
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer .colonne2 {
+    padding-left: 355px;
+  }
 }
 footer div#block-15.widget.widget_block {
   display: flex;
   flex-direction: row;
+  padding-right: 10px;
+}
+@media screen and (min-width: 900px) {
+  footer div#block-15.widget.widget_block {
+    padding-right: 10px;
+  }
 }
 footer div#block-15.widget.widget_block .wp-block-social-link-anchor {
   width: 2vw;
@@ -415,6 +430,20 @@ footer #menu-footer.menu {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 750px) {
+  footer #menu-footer.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer #menu-footer.menu {
+    display: flex;
+    margin-right: 200px;
+  }
 }
 footer .sidebar {
   display: flex;
@@ -437,6 +466,11 @@ footer .Ligne {
   width: 100vw;
   height: 3px;
 }
+@media screen and (min-width: 900px) {
+  footer .Ligne {
+    width: 100vw;
+  }
+}
 footer .Choix a {
   display: flex;
   justify-content: left;
@@ -456,8 +490,23 @@ footer p {
   font-size: 20px;
 }
 footer .wp-block-quote {
-  padding-left: 100px;
+  padding-left: 140px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer .wp-block-quote {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 750px) {
+  footer .wp-block-quote {
+    padding-left: 250px;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer .wp-block-quote {
+    padding-left: 550px;
+  }
 }
 
 .site_header_logo {
@@ -479,7 +528,7 @@ footer .wp-block-quote {
   align-items: center;
   flex-direction: column-reverse;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .menu__recherche {
     flex-direction: row;
     align-items: center;
@@ -491,7 +540,7 @@ footer .wp-block-quote {
   transform: translateX(300px);
   transition: transform;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .menu-entete-container {
     transform: translateX(0px);
   }
@@ -503,7 +552,7 @@ footer .wp-block-quote {
   align-items: flex-end;
   justify-content: flex-start;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .menu-entete-container .menu {
     flex-direction: row;
     align-items: center;
@@ -526,13 +575,13 @@ footer .wp-block-quote {
   align-items: center;
   width: 30px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .burger {
     display: none;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .ligneMenuBurger {
     display: none;
   }
@@ -547,13 +596,18 @@ footer .wp-block-quote {
   display: flex;
   flex-direction: row;
 }
+@media screen and (min-width: 900px) {
+  .menu__recherche {
+    margin-right: 150px;
+  }
+}
 
 .recherche {
   display: flex;
   flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .recherche__input {
     display: none;
   }
@@ -570,7 +624,7 @@ footer .wp-block-quote {
   border-bottom: solid 5px white;
   color: rgb(255, 255, 255);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .bienvenue {
     font-size: 2em;
     font-family: "Lavishly Yours", cursive;
@@ -623,6 +677,7 @@ footer .wp-block-quote {
 .search {
   display: flex;
   flex-direction: row;
+  background-color: white;
 }
 
 .search_1 {
@@ -643,12 +698,15 @@ footer .wp-block-quote {
   flex-direction: row;
 }
 
-.Description {
-  padding-left: 50px;
+.DescriptionS {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
 }
-
-.texte {
+.DescriptionS .texte {
   padding-left: 60px;
+  color: rgb(67, 67, 67);
+  font-size: 15px;
 }
 
 .Evenement {
@@ -657,6 +715,28 @@ footer .wp-block-quote {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+  .Evenement {
+    height: 50vh;
+  }
+}
+.Evenement #menu-evenement {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .Evenement #menu-evenement {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Evenement #menu-evenement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .Evenement .menu-item {
   display: flex;
@@ -666,22 +746,45 @@ footer .wp-block-quote {
   border-radius: 20px;
   background-color: #2D3192;
   border-bottom: solid white 30px;
+  border-top: solid #ffffff 15px;
   border-bottom-left-radius: 40px;
+}
+@media screen and (min-width: 900px) {
+  .Evenement #menu-item-226 {
+    width: 25vw;
+    height: 40vh;
+    margin-right: 20px;
+  }
 }
 .Evenement #menu-item-231 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
   border-radius: 20px;
   border-bottom-left-radius: 40px;
+  border-top: solid #ffffff 15px;
+}
+@media screen and (min-width: 900px) {
+  .Evenement #menu-item-231 {
+    width: 25vw;
+    height: 40vh;
+    margin-right: 20px;
+  }
 }
 .Evenement #menu-item-250 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
   border-radius: 20px;
   border-bottom-left-radius: 40px;
+  border-top: solid #ffffff 15px;
+}
+@media screen and (min-width: 900px) {
+  .Evenement #menu-item-250 {
+    width: 25vw;
+    height: 40vh;
+  }
 }
 .Evenement img.menu-thumbnail {
-  padding-left: 40px;
+  padding-left: 30px;
   padding-top: 20px;
 }
 .Evenement a {
@@ -691,9 +794,20 @@ footer .wp-block-quote {
   text-decoration: none;
   padding-bottom: 10px;
 }
+@media screen and (min-width: 900px) {
+  .Evenement a {
+    padding-left: 80px;
+    padding-top: 40px;
+  }
+}
 
 .Archive {
   height: 60px;
+}
+@media screen and (min-width: 900px) {
+  .Archive {
+    height: 80px;
+  }
 }
 .Archive #menu-bloc-archive {
   display: flex;
@@ -711,6 +825,18 @@ footer .wp-block-quote {
   font-family: cursive;
   text-decoration: none;
 }
+@media screen and (min-width: 750px) {
+  .Archive a {
+    font-size: 1.4rem;
+    margin-left: 130px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Archive a {
+    font-size: 1.4rem;
+    margin-left: 25vw;
+  }
+}
 .Archive ::marker {
   color: transparent;
 }
@@ -726,12 +852,38 @@ main.site__main h1 {
   margin-left: 170px;
   font-family: cursive;
 }
+@media screen and (min-width: 750px) {
+  main.site__main h1 {
+    margin-left: 250px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main.site__main h1 {
+    margin-left: 300px;
+  }
+}
 main.site__main img {
   margin-left: 230px;
   padding-top: 10px;
 }
+@media screen and (min-width: 750px) {
+  main.site__main img {
+    margin-left: 300px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main.site__main img {
+    margin-left: 400px;
+  }
+}
 main.site__main p {
-  font-size: 20px;
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media screen and (min-width: 900px) {
+  main.site__main p {
+    margin-left: 50px;
+  }
 }
 main.site__main h2 {
   background-color: gray;
@@ -750,13 +902,28 @@ footer .site__footer {
 footer .colonne2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
+  padding-left: 10px;
   color: white;
+}
+@media screen and (min-width: 750px) {
+  footer .colonne2 {
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer .colonne2 {
+    padding-left: 355px;
+  }
 }
 footer div#block-15.widget.widget_block {
   display: flex;
   flex-direction: row;
+  padding-right: 10px;
+}
+@media screen and (min-width: 900px) {
+  footer div#block-15.widget.widget_block {
+    padding-right: 10px;
+  }
 }
 footer div#block-15.widget.widget_block .wp-block-social-link-anchor {
   width: 2vw;
@@ -767,6 +934,20 @@ footer #menu-footer.menu {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 750px) {
+  footer #menu-footer.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer #menu-footer.menu {
+    display: flex;
+    margin-right: 200px;
+  }
 }
 footer .sidebar {
   display: flex;
@@ -789,6 +970,11 @@ footer .Ligne {
   width: 100vw;
   height: 3px;
 }
+@media screen and (min-width: 900px) {
+  footer .Ligne {
+    width: 100vw;
+  }
+}
 footer .Choix a {
   display: flex;
   justify-content: left;
@@ -808,8 +994,23 @@ footer p {
   font-size: 20px;
 }
 footer .wp-block-quote {
-  padding-left: 100px;
+  padding-left: 140px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer .wp-block-quote {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 750px) {
+  footer .wp-block-quote {
+    padding-left: 250px;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer .wp-block-quote {
+    padding-left: 550px;
+  }
 }
 
 /**
@@ -836,6 +1037,21 @@ footer .wp-block-quote {
 }
 .site__footer img {
   padding-left: 210px;
+}
+@media screen and (min-width: 600px) {
+  .site__footer img {
+    padding-left: 230px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .site__footer img {
+    padding-left: 300px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .site__footer img {
+    padding-left: 600px;
+  }
 }
 
 .site__aside {
@@ -881,7 +1097,7 @@ footer .wp-block-quote {
   grid-template-areas: "header" "aside" "main" "footer";
   background-color: #bdbfed;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
@@ -895,7 +1111,7 @@ aside.h3 {
 .no-aside {
   grid-template-areas: "header" "main" "footer";
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .no-aside {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";

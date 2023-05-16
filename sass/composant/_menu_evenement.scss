@@ -6,16 +6,50 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $largeur_bureau ){
+       height: 50vh;
+    }
+
+    
+   #menu-evenement{
+
+    display: flex;
+
+    @media screen and (max-width: $largeur_bureau ){
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    @media screen and (min-width: $largeur_bureau ){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+   }
 
     .menu-item{
      display: flex;
      flex-direction: column;
+    
     }
+
+
     #menu-item-226{
         border-radius:20px ;
         background-color: #2D3192;
         border-bottom: solid white 30px;
+        border-top: solid #ffffff 15px;
         border-bottom-left-radius: 40px;
+        
+        @media screen and (min-width: $largeur_bureau ){
+           width: 25vw;
+           height: 40vh;
+           margin-right: 20px;
+        }
        
     }
     #menu-item-231{
@@ -23,17 +57,29 @@
         border-bottom: solid white 30px;
         border-radius:20px ;
         border-bottom-left-radius: 40px;
+        border-top: solid #ffffff 15px;
+
+        @media screen and (min-width: $largeur_bureau ){
+            width: 25vw;
+            height: 40vh;
+            margin-right: 20px;
+         }
     }
     #menu-item-250{
         background-color: #2D3192;
         border-bottom: solid white 30px;
         border-radius:20px ;
         border-bottom-left-radius: 40px;
+        border-top: solid #ffffff 15px;
+        @media screen and (min-width: $largeur_bureau ){
+            width: 25vw;
+            height: 40vh;
+         }
 
     }
 
     img.menu-thumbnail{
-       padding-left: 40px;
+       padding-left: 30px;
        padding-top: 20px;
     }
             a{
@@ -43,6 +89,11 @@
                 font-family:cursive;
                 text-decoration: none;
                 padding-bottom: 10px;
+                @media screen and (min-width: $largeur_bureau ){
+                    padding-left: 80px;
+                    padding-top: 40px;
+                  
+                 }
                
             }
             
@@ -52,9 +103,16 @@
             
             height: 60px;
 
+           
+            @media screen and (min-width: $largeur_bureau ){
+               height: 80px;
+        
+            }
             #menu-bloc-archive{
                 display: flex;
                 flex-direction: row;
+
+               
             }
 
             a{
@@ -68,6 +126,16 @@
                 margin-left: 80px;
                 font-family:cursive;
                 text-decoration: none;
+
+                @media screen and (min-width: $largeur_tabletteDeux) {
+                    font-size: 1.4rem;
+                    margin-left: 130px;
+                }
+
+                @media screen and (min-width: $largeur_bureau) {
+                    font-size: 1.4rem;
+                    margin-left: 25vw;
+                }
             }
             ::marker{
                 color: transparent;
@@ -87,18 +155,49 @@ main.site__main{
         margin-left: 170px;
         font-family:cursive;
 
+        @media screen and (min-width: $largeur_tabletteDeux) {
+
+           margin-left: 250px;
+            
+        }
+        @media screen and (min-width: $largeur_bureau) {
+
+            margin-left: 300px;
+             
+         }
+
     }
     img{
         margin-left: 230px;
         padding-top: 10px;
+
+        @media screen and (min-width: $largeur_tabletteDeux) {
+
+           margin-left: 300px;
+            
+        }
+        @media screen and (min-width: $largeur_bureau) {
+
+            margin-left: 400px;
+             
+         }
     }
     p{
-        font-size: 20px;
+        font-size: 15px;
+        margin-left: 40px;
+
+        @media screen and (min-width: $largeur_bureau) {
+
+            margin-left: 50px;
+             
+         }
     }
 
     h2{
         background-color: gray;
         border: #ffffff 3px solid;
+
+       
     }
     
 }

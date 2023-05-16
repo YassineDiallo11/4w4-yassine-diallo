@@ -24,6 +24,24 @@
 
   img{
     padding-left: 210px;
+
+
+    @media screen and (min-width: $largeur_tablette) {
+
+      padding-left: 230px;
+      
+  }
+  @media screen and (min-width: $largeur_tabletteDeux) {
+
+    padding-left: 300px;
+    
+}
+
+@media screen and (min-width: $largeur_bureau) {
+
+  padding-left: 600px;
+  
+}
   }
 }
 .site__aside {
@@ -37,6 +55,9 @@
   border-bottom: solid 6px white;
   border-bottom-right-radius: 120px;
   border-bottom: solid 6px white;
+
+
+  
 
   h3{
     font-size: 20px;
