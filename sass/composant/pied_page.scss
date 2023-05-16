@@ -1,6 +1,6 @@
 footer{
-    background-color: #ffffff;
-}
+
+
 
 .site__footer{
         height: 100vh;
@@ -9,21 +9,34 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-around; 
+        
     }
 .colonne2{
+  
     display: flex;
-    justify-content: left;
     flex-direction: row;
+    justify-content: space-between;
     margin: 10px;
     color: white;
 }
 div#block-15.widget.widget_block{
-    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+
+    .wp-block-social-link-anchor{
+        width: 2vw;
+        margin-right: 5px;
+    }
+
+   
 }
 #menu-footer.menu{
     
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     justify-content: space-around;
    
@@ -50,7 +63,7 @@ p{
 }
 .Ligne{
     background-color: #ffffff;
-    width: 90vw;
+    width: 100vw;
     height: 3px;
 }
 .Choix a{
@@ -63,13 +76,24 @@ p{
 }
 
 .logo{
+    display: flex;
     width: 100vw;
-    background-color:  #2D3192;
-    
-    
+    background-color:  #2D3192;  
 }
 
 cite{
     color: rgb(169, 168, 168);
+    padding-left: 70px;
 }
 
+p{
+    font-size: 20px;
+}
+.wp-block-quote{
+    padding-left: 100px;
+    padding-bottom: 20px;
+    
+}
+
+
+}

@@ -79,6 +79,8 @@
 main.site__main{
     display: flex;
     flex-direction: column;
+    width: 90vw;
+    margin-left: 20px;
 
     h1{
         color: #2D3192;
@@ -92,6 +94,11 @@ main.site__main{
     }
     p{
         font-size: 20px;
+    }
+
+    h2{
+        background-color: gray;
+        border: #ffffff 3px solid;
     }
     
 }

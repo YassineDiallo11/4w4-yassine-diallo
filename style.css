@@ -387,11 +387,7 @@ li::before {
 }
 
 /* --------------------------------------------- composant */
-footer {
-  background-color: #ffffff;
-}
-
-.site__footer {
+footer .site__footer {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -399,66 +395,69 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
-
-.colonne2 {
+footer .colonne2 {
   display: flex;
-  justify-content: left;
   flex-direction: row;
+  justify-content: space-between;
   margin: 10px;
   color: white;
 }
-
-div#block-15.widget.widget_block {
-  margin-right: 100px;
-}
-
-#menu-footer.menu {
+footer div#block-15.widget.widget_block {
   display: flex;
   flex-direction: row;
+}
+footer div#block-15.widget.widget_block .wp-block-social-link-anchor {
+  width: 2vw;
+  margin-right: 5px;
+}
+footer #menu-footer.menu {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
-.sidebar {
+footer .sidebar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-p {
+footer p {
   color: white;
   text-align: center;
 }
-
-.menu-footer-container .menu {
+footer .menu-footer-container .menu {
   list-style-type: none;
   text-decoration: none;
 }
-
-.menu-footer-container {
+footer .menu-footer-container {
   color: rgb(255, 255, 255);
 }
-
-.Ligne {
+footer .Ligne {
   background-color: #ffffff;
-  width: 90vw;
+  width: 100vw;
   height: 3px;
 }
-
-.Choix a {
+footer .Choix a {
   display: flex;
   justify-content: left;
   flex-direction: row;
   padding: 10px;
 }
-
-.logo {
+footer .logo {
+  display: flex;
   width: 100vw;
   background-color: #2D3192;
 }
-
-cite {
+footer cite {
   color: rgb(169, 168, 168);
+  padding-left: 70px;
+}
+footer p {
+  font-size: 20px;
+}
+footer .wp-block-quote {
+  padding-left: 100px;
+  padding-bottom: 20px;
 }
 
 .site_header_logo {
@@ -635,7 +634,8 @@ cite {
 }
 
 .Search_2 {
-  padding-left: 20px;
+  padding-left: 80px;
+  font-size: 15px;
 }
 
 .searchTout {
@@ -718,6 +718,8 @@ cite {
 main.site__main {
   display: flex;
   flex-direction: column;
+  width: 90vw;
+  margin-left: 20px;
 }
 main.site__main h1 {
   color: #2D3192;
@@ -731,13 +733,13 @@ main.site__main img {
 main.site__main p {
   font-size: 20px;
 }
-
-/* --------------------------------------------- layout */
-footer {
-  background-color: #ffffff;
+main.site__main h2 {
+  background-color: gray;
+  border: #ffffff 3px solid;
 }
 
-.site__footer {
+/* --------------------------------------------- layout */
+footer .site__footer {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -745,66 +747,69 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
-
-.colonne2 {
+footer .colonne2 {
   display: flex;
-  justify-content: left;
   flex-direction: row;
+  justify-content: space-between;
   margin: 10px;
   color: white;
 }
-
-div#block-15.widget.widget_block {
-  margin-right: 100px;
-}
-
-#menu-footer.menu {
+footer div#block-15.widget.widget_block {
   display: flex;
   flex-direction: row;
+}
+footer div#block-15.widget.widget_block .wp-block-social-link-anchor {
+  width: 2vw;
+  margin-right: 5px;
+}
+footer #menu-footer.menu {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
-.sidebar {
+footer .sidebar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-p {
+footer p {
   color: white;
   text-align: center;
 }
-
-.menu-footer-container .menu {
+footer .menu-footer-container .menu {
   list-style-type: none;
   text-decoration: none;
 }
-
-.menu-footer-container {
+footer .menu-footer-container {
   color: rgb(255, 255, 255);
 }
-
-.Ligne {
+footer .Ligne {
   background-color: #ffffff;
-  width: 90vw;
+  width: 100vw;
   height: 3px;
 }
-
-.Choix a {
+footer .Choix a {
   display: flex;
   justify-content: left;
   flex-direction: row;
   padding: 10px;
 }
-
-.logo {
+footer .logo {
+  display: flex;
   width: 100vw;
   background-color: #2D3192;
 }
-
-cite {
+footer cite {
   color: rgb(169, 168, 168);
+  padding-left: 70px;
+}
+footer p {
+  font-size: 20px;
+}
+footer .wp-block-quote {
+  padding-left: 100px;
+  padding-bottom: 20px;
 }
 
 /**
@@ -828,6 +833,9 @@ cite {
 .site__footer {
   grid-area: footer;
   background-color: #2D3192;
+}
+.site__footer img {
+  padding-left: 210px;
 }
 
 .site__aside {
@@ -856,7 +864,7 @@ cite {
   color: transparent;
 }
 .site__aside .menu-cours-container p {
-  font-size: 18px;
+  font-size: px;
 }
 .site__aside .menu-cours-container code {
   font-size: 20px;
