@@ -96,7 +96,7 @@
     "main"
     "footer";
   // row-gap: 50px;
-  background-color: #bdbfed ;
+  background-image:url(images/Colorful.png);
   @media screen and (min-width: $largeur_bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:

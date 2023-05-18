@@ -151,7 +151,7 @@ main.site__main{
     margin-left: 20px;
 
     h1{
-        color: #2D3192;
+        color: #ffffff;
         margin-left: 170px;
         font-family:cursive;
 
@@ -185,6 +185,7 @@ main.site__main{
     p{
         font-size: 15px;
         margin-left: 40px;
+        color: white;
 
         @media screen and (min-width: $largeur_bureau) {
 
@@ -198,6 +199,14 @@ main.site__main{
         border: #ffffff 3px solid;
 
        
+    }
+
+    .bloc__cours{
+        background-image: url("https://s2.svgbox.net/octicons.svg?ic=book");
+    }
+    .bloc__4w4{
+        background-image: url("https://s2.svgbox.net/octicons.svg?ic=note");
+        
     }
     
 }

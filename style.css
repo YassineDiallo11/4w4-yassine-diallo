@@ -401,11 +401,6 @@ footer .colonne2 {
   padding-left: 10px;
   color: white;
 }
-@media screen and (min-width: 750px) {
-  footer .colonne2 {
-    padding-left: 80px;
-  }
-}
 @media screen and (min-width: 900px) {
   footer .colonne2 {
     padding-left: 355px;
@@ -613,10 +608,6 @@ footer .wp-block-quote {
   }
 }
 
-.custom-background {
-  background-color: transparent;
-}
-
 .bienvenue {
   font-size: 3.5em;
   font-family: "Lavishly Yours", cursive;
@@ -664,6 +655,18 @@ footer .wp-block-quote {
 .blocflex__article:hover {
   border-color: aliceblue;
   background-color: #2D3192;
+}
+.blocflex__article:hover p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.blocflex__article:hover a {
+  color: #ffffff;
+  margin-left: 180px;
+}
+.blocflex__article:hover h5 {
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .blocflex__galerie {
@@ -848,7 +851,7 @@ main.site__main {
   margin-left: 20px;
 }
 main.site__main h1 {
-  color: #2D3192;
+  color: #ffffff;
   margin-left: 170px;
   font-family: cursive;
 }
@@ -879,6 +882,7 @@ main.site__main img {
 main.site__main p {
   font-size: 15px;
   margin-left: 40px;
+  color: white;
 }
 @media screen and (min-width: 900px) {
   main.site__main p {
@@ -888,6 +892,12 @@ main.site__main p {
 main.site__main h2 {
   background-color: gray;
   border: #ffffff 3px solid;
+}
+main.site__main .bloc__cours {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=book");
+}
+main.site__main .bloc__4w4 {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=note");
 }
 
 /* --------------------------------------------- layout */
@@ -904,11 +914,6 @@ footer .colonne2 {
   flex-direction: row;
   padding-left: 10px;
   color: white;
-}
-@media screen and (min-width: 750px) {
-  footer .colonne2 {
-    padding-left: 80px;
-  }
 }
 @media screen and (min-width: 900px) {
   footer .colonne2 {
@@ -1095,7 +1100,7 @@ footer .wp-block-quote {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  background-color: #bdbfed;
+  background-image: url(images/Colorful.png);
 }
 @media screen and (min-width: 900px) {
   .site {

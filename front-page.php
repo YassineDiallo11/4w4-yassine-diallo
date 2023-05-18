@@ -16,6 +16,7 @@
 </section>
 
 <section class="Archive">
+ <img src="images/livre-ouvert.png" alt="">
 <?php wp_nav_menu(array(
     "menu"=>"bloc-archive",
     "container"=>"nav"

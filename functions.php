@@ -71,7 +71,7 @@ add_theme_support( 'custom-logo',
                         'width'  => 150,
 ) );
 add_theme_support( 'post-thumbnails' );
-add_theme_support('Arrière-plan');
+add_theme_support('custom-background');
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

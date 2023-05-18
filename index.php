@@ -1,6 +1,7 @@
 <?php 
 ?>
 <?php get_header();?>
+
 <main>
 <h3>index.php</h3>
 <?php 

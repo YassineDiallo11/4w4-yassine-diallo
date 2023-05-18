@@ -1,6 +1,4 @@
-.custom-background{
-  background-color: transparent;
-}
+
 //Message de bienvenue
 .bienvenue{
   font-size: 3.5em;
@@ -53,6 +51,20 @@
     .blocflex__article:hover {
       border-color: aliceblue;
       background-color:  #2D3192;
+      
+      p{
+        color: #ffffff;
+        font-size: 20px;
+      }
+      a{
+        color: #ffffff;
+        margin-left: 180px;
+      }
+
+      h5{
+        font-size: 20px;
+        color: #ffffff;
+      }
       
       
     }

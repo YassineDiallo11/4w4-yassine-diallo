@@ -17,11 +17,7 @@ footer{
     flex-direction: row;
     padding-left: 10px;
     color: white;
-    @media screen and (min-width: $largeur_tabletteDeux) {
-
-       padding-left: 80px;
-        
-    }
+   
 
     @media screen and (min-width: $largeur_bureau) {
 
