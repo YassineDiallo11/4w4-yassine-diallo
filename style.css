@@ -653,7 +653,7 @@ footer .wp-block-quote {
 }
 
 .blocflex__article:hover {
-  border-color: aliceblue;
+  border-color: rgb(245, 250, 254);
   background-color: #2D3192;
 }
 .blocflex__article:hover p {
