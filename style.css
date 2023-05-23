@@ -904,6 +904,13 @@ main.site__main .bloc__4w4 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 900px) {
+  .Atelier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .Atelier ul#menu-atelier.menu a {
   text-decoration: none;
 }
@@ -928,6 +935,28 @@ main.site__main .bloc__4w4 {
   font-size: 18px;
   font-family: cursive;
 }
+@media screen and (min-width: 900px) {
+  .Atelier ul#menu-atelier.menu #menu-item-280 {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 400px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-280 img {
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-280 .title {
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+.Atelier ul#menu-atelier.menu #menu-item-280:hover {
+  border: #ffb31c solid 8px;
+  background-color: #ef5bdb;
+}
+.Atelier ul#menu-atelier.menu #menu-item-280:hover .title {
+  color: #2D3192;
+}
 .Atelier ul#menu-atelier.menu #menu-item-281 {
   width: 60vw;
   height: 30vh;
@@ -945,6 +974,28 @@ main.site__main .bloc__4w4 {
 .Atelier ul#menu-atelier.menu #menu-item-281 .title {
   font-size: 18px;
   font-family: cursive;
+}
+@media screen and (min-width: 900px) {
+  .Atelier ul#menu-atelier.menu #menu-item-281 {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 400px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-281 img {
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-281 .title {
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+.Atelier ul#menu-atelier.menu #menu-item-281:hover {
+  border: #ffb31c solid 8px;
+  background-color: #ef5bdb;
+}
+.Atelier ul#menu-atelier.menu #menu-item-281:hover .title {
+  color: #2D3192;
 }
 .Atelier ul#menu-atelier.menu #menu-item-282 {
   width: 60vw;
@@ -964,6 +1015,28 @@ main.site__main .bloc__4w4 {
   font-size: 18px;
   font-family: cursive;
 }
+@media screen and (min-width: 900px) {
+  .Atelier ul#menu-atelier.menu #menu-item-282 {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 400px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-282 img {
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-282 .title {
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+.Atelier ul#menu-atelier.menu #menu-item-282:hover {
+  border: #ffb31c solid 8px;
+  background-color: #ef5bdb;
+}
+.Atelier ul#menu-atelier.menu #menu-item-282:hover .title {
+  color: #2D3192;
+}
 .Atelier ul#menu-atelier.menu #menu-item-283 {
   width: 60vw;
   height: 30vh;
@@ -981,6 +1054,28 @@ main.site__main .bloc__4w4 {
 .Atelier ul#menu-atelier.menu #menu-item-283 .title {
   font-size: 18px;
   font-family: cursive;
+}
+@media screen and (min-width: 900px) {
+  .Atelier ul#menu-atelier.menu #menu-item-283 {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 400px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-283 img {
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-283 .title {
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+.Atelier ul#menu-atelier.menu #menu-item-283:hover {
+  border: #ffb31c solid 8px;
+  background-color: #ef5bdb;
+}
+.Atelier ul#menu-atelier.menu #menu-item-283:hover .title {
+  color: #2D3192;
 }
 .Atelier ul#menu-atelier.menu #menu-item-284 {
   width: 60vw;
@@ -1000,18 +1095,55 @@ main.site__main .bloc__4w4 {
   font-size: 18px;
   font-family: cursive;
 }
+@media screen and (min-width: 900px) {
+  .Atelier ul#menu-atelier.menu #menu-item-284 {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 400px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-284 img {
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+  .Atelier ul#menu-atelier.menu #menu-item-284 .title {
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+.Atelier ul#menu-atelier.menu #menu-item-284:hover {
+  border: #ffb31c solid 8px;
+  background-color: #ef5bdb;
+}
+.Atelier ul#menu-atelier.menu #menu-item-284:hover .title {
+  color: #2D3192;
+}
 
 .MenuDescriptionAtelier img {
   padding-left: 200px;
+}
+@media screen and (min-width: 900px) {
+  .MenuDescriptionAtelier img {
+    padding-left: 450px;
+  }
 }
 .MenuDescriptionAtelier h1 {
   padding-left: 80px;
   color: #ffffff;
   font-family: cursive;
 }
+@media screen and (min-width: 900px) {
+  .MenuDescriptionAtelier h1 {
+    padding-left: 340px;
+  }
+}
 .MenuDescriptionAtelier p {
   font-size: 15px;
   color: white;
+}
+@media screen and (min-width: 900px) {
+  .MenuDescriptionAtelier p {
+    font-size: 20px;
+  }
 }
 .MenuDescriptionAtelier .Tableau {
   margin-left: 130px;

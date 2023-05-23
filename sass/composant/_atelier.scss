@@ -5,10 +5,16 @@
     display: flex;
     flex-direction: column;
    
+    @media screen and (min-width: $largeur_bureau ){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
 
     ul#menu-atelier.menu{
-    
 
+       
         a{
             text-decoration: none;
         }
@@ -36,7 +42,36 @@
                 font-size: 18px;
                 font-family:cursive;
             }
+
+            @media screen and (min-width: $largeur_bureau ){
+                width: 30vw;
+                height: 30vh;
+                margin-left: 400px;
+
+                img{
+                    margin-left: 150px;
+                    padding-top: 10px;
+                }
+                .title{
+                    
+                    font-size: 25px;
+                    font-family:cursive;
+                }
+                
+
+             }
+             
         }
+         //Atelier Hover--------------------------
+        #menu-item-280:hover{
+         border: #ffb31c solid 8px;
+        background-color: #ef5bdb;
+
+        .title{
+        color: #2D3192;
+         }
+        }
+       
         #menu-item-281{
             width: 60vw;
             height: 30vh;
@@ -54,6 +89,30 @@
                 
                 font-size: 18px;
                 font-family:cursive;
+            }
+            @media screen and (min-width: $largeur_bureau ){
+                width: 30vw;
+                height: 30vh;
+                margin-left: 400px;
+
+                img{
+                    margin-left: 150px;
+                    padding-top: 10px;
+                }
+                .title{
+                    
+                    font-size: 25px;
+                    font-family:cursive;
+                }
+
+             }
+        }
+        #menu-item-281:hover{
+            border: #ffb31c solid 8px;
+            background-color: #ef5bdb;
+        
+            .title{
+                color: #2D3192;
             }
         }
         #menu-item-282{
@@ -74,6 +133,30 @@
                 font-size: 18px;
                 font-family:cursive;
             }
+            @media screen and (min-width: $largeur_bureau ){
+                width: 30vw;
+                height: 30vh;
+                margin-left: 400px;
+
+                img{
+                    margin-left: 150px;
+                    padding-top: 10px;
+                }
+                .title{
+                    
+                    font-size: 25px;
+                    font-family:cursive;
+                }
+
+             }
+        }
+        #menu-item-282:hover{
+            border: #ffb31c solid 8px;
+            background-color: #ef5bdb;
+        
+            .title{
+                color: #2D3192;
+            }
         }
         #menu-item-283{
             width: 60vw;
@@ -87,11 +170,38 @@
             img{
                 margin-left: 100px;
                 padding-top: 10px;
+                
             }
+           
             .title{
                 
                 font-size: 18px;
                 font-family:cursive;
+            }
+            @media screen and (min-width: $largeur_bureau ){
+                width: 30vw;
+                height: 30vh;
+                margin-left: 400px;
+
+                img{
+                    margin-left: 150px;
+                    padding-top: 10px;
+                }
+                .title{
+                    
+                    font-size: 25px;
+                    font-family:cursive;
+                }
+
+             }
+        }
+        #menu-item-283:hover{
+   
+            border: #ffb31c solid 8px;
+            background-color: #ef5bdb;
+        
+            .title{
+                color: #2D3192;
             }
         }
         #menu-item-284{
@@ -112,24 +222,71 @@
                 font-size: 18px;
                 font-family:cursive;
             }
+            @media screen and (min-width: $largeur_bureau ){
+                width: 30vw;
+                height: 30vh;
+                margin-left: 400px;
+        
+                img{
+                    margin-left: 150px;
+                    padding-top: 10px;
+                }
+                .title{
+                    
+                    font-size: 25px;
+                    font-family:cursive;
+                }
+        
+             }
+
         }
+        #menu-item-284:hover{
+
+            border: #ffb31c solid 8px;
+            background-color: #ef5bdb;
+        
+            .title{
+                color: #2D3192;
+            }
+        }
+            
+        }
+        
     }
-}
+   
+
+
+
+
+
+
 .MenuDescriptionAtelier{
    
 
     img{
         padding-left: 200px;
+
+        @media screen and (min-width: $largeur_bureau ){
+            padding-left: 450px;
+         }
     }
 
     h1{
         padding-left: 80px;
         color: #ffffff;
         font-family: cursive;
+
+        @media screen and (min-width: $largeur_bureau ){
+            padding-left: 340px;
+         }
     }
     p{
         font-size: 15px;
         color: white;
+
+        @media screen and (min-width: $largeur_bureau ){
+            font-size: 20px;
+         }
     }
 
     .Tableau{
