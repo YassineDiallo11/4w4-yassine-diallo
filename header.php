@@ -32,15 +32,5 @@ if(is_front_page()){
 
 <?php
 
-if (!is_front_page() && !is_search() && !is_page_template('template-atelier.php')) {
-
-   get_template_part("template-parts/aside");
-  
- }
-  
-   if(is_page_template('template-atelier.php')) {
-  
-   get_template_part("template-parts/aside-atelier");
-  
-   }
+ if (!is_front_page() && !is_search() && !is_page_template('template-atelier.php')) { get_template_part("template-parts/aside");} if(is_page_template('template-atelier.php')){ get_template_part("template-parts/aside-atelier");}
 ?>
