@@ -1001,8 +1001,29 @@ main.site__main .bloc__4w4 {
   font-family: cursive;
 }
 
-.MenuDescriptionAtelier {
-  background-color: aliceblue;
+.MenuDescriptionAtelier img {
+  padding-left: 200px;
+}
+.MenuDescriptionAtelier h1 {
+  padding-left: 80px;
+  color: #ffffff;
+  font-family: cursive;
+}
+.MenuDescriptionAtelier p {
+  font-size: 15px;
+  color: white;
+}
+.MenuDescriptionAtelier .Tableau {
+  margin-left: 130px;
+  margin-bottom: 20px;
+  border: #ffffff solid 5px;
+  width: 50vw;
+  background-color: #2D3192;
+}
+.MenuDescriptionAtelier .Tableau p {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid white 3px;
 }
 
 /* --------------------------------------------- layout */

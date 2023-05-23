@@ -10,11 +10,13 @@ if ( have_posts() ) : the_post(); ?>
 the_post_thumbnail('thumbnail') ?>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-<p>Date <?php the_field('date_'); ?></p>
-<p>Heure <?php the_field('heure_'); ?></p>     
-<p>Durée <?php the_field('duree_'); ?></p>
-<p>Local <?php the_field('local_'); ?></p>  
-<p>Formateur <?php the_field('formateur_'); ?></p>
+<section class="Tableau">
+<p>Date :  <?php the_field('date_'); ?></p>
+<p>Heure : <?php the_field('heure_'); ?></p>     
+<p>Durée : <?php the_field('duree_'); ?></p>
+<p>Local : <?php the_field('local_'); ?></p>  
+<p>Formateur : <?php the_field('formateur_'); ?></p>
+</section>
 <?php endif;?>
 </main><!-- #main -->
 <?php
