@@ -36,5 +36,13 @@ if ( ! is_front_page() && !is_search()){
 get_template_part("template-parts/aside");
 
 }
+$nouvelle_classe = "";
+  if  (is_front_page() || 
+      (! in_category("atelier") && ! in_category("4w4")) ){
+        $nouvelle_classe = 'no-aside';
+      }
+  if (is_page_template('template-atelier.php')) {
+       $nouvelle_classe = '';
+  }
 
 ?>

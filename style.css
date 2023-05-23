@@ -900,6 +900,111 @@ main.site__main .bloc__4w4 {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=note");
 }
 
+.Atelier {
+  display: flex;
+  flex-direction: column;
+}
+.Atelier ul#menu-atelier.menu a {
+  text-decoration: none;
+}
+.Atelier ul#menu-atelier.menu ::marker {
+  color: transparent;
+}
+.Atelier ul#menu-atelier.menu #menu-item-280 {
+  width: 60vw;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #2D3192;
+  border: solid white 8px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Atelier ul#menu-atelier.menu #menu-item-280 img {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+.Atelier ul#menu-atelier.menu #menu-item-280 .title {
+  font-size: 18px;
+  font-family: cursive;
+}
+.Atelier ul#menu-atelier.menu #menu-item-281 {
+  width: 60vw;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #2D3192;
+  border: solid white 8px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Atelier ul#menu-atelier.menu #menu-item-281 img {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+.Atelier ul#menu-atelier.menu #menu-item-281 .title {
+  font-size: 18px;
+  font-family: cursive;
+}
+.Atelier ul#menu-atelier.menu #menu-item-282 {
+  width: 60vw;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #2D3192;
+  border: solid white 8px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Atelier ul#menu-atelier.menu #menu-item-282 img {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+.Atelier ul#menu-atelier.menu #menu-item-282 .title {
+  font-size: 18px;
+  font-family: cursive;
+}
+.Atelier ul#menu-atelier.menu #menu-item-283 {
+  width: 60vw;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #2D3192;
+  border: solid white 8px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Atelier ul#menu-atelier.menu #menu-item-283 img {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+.Atelier ul#menu-atelier.menu #menu-item-283 .title {
+  font-size: 18px;
+  font-family: cursive;
+}
+.Atelier ul#menu-atelier.menu #menu-item-284 {
+  width: 60vw;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  background-color: #2D3192;
+  border: solid white 8px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Atelier ul#menu-atelier.menu #menu-item-284 img {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+.Atelier ul#menu-atelier.menu #menu-item-284 .title {
+  font-size: 18px;
+  font-family: cursive;
+}
+
+.MenuDescriptionAtelier {
+  background-color: aliceblue;
+}
+
 /* --------------------------------------------- layout */
 footer .site__footer {
   height: 100vh;

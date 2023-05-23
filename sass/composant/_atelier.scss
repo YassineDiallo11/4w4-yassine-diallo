@@ -1,0 +1,120 @@
+.Atelier{
+
+   
+  
+    display: flex;
+    flex-direction: column;
+   
+
+    ul#menu-atelier.menu{
+    
+
+        a{
+            text-decoration: none;
+        }
+
+        ::marker{
+            color: transparent;
+        }
+
+        #menu-item-280{
+            width: 60vw;
+            height: 30vh;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: #2D3192;
+            border: solid white 8px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+
+            img{
+                margin-left: 100px;
+                padding-top: 10px;
+            }
+            .title{
+                
+                font-size: 18px;
+                font-family:cursive;
+            }
+        }
+        #menu-item-281{
+            width: 60vw;
+            height: 30vh;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: #2D3192;
+            border: solid white 8px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            img{
+                margin-left: 100px;
+                padding-top: 10px;
+            }
+            .title{
+                
+                font-size: 18px;
+                font-family:cursive;
+            }
+        }
+        #menu-item-282{
+            width: 60vw;
+            height: 30vh;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: #2D3192;
+            border: solid white 8px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            img{
+                margin-left: 100px;
+                padding-top: 10px;
+            }
+            .title{
+                
+                font-size: 18px;
+                font-family:cursive;
+            }
+        }
+        #menu-item-283{
+            width: 60vw;
+            height: 30vh;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: #2D3192;
+            border: solid white 8px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            img{
+                margin-left: 100px;
+                padding-top: 10px;
+            }
+            .title{
+                
+                font-size: 18px;
+                font-family:cursive;
+            }
+        }
+        #menu-item-284{
+            width: 60vw;
+            height: 30vh;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: #2D3192;
+            border: solid white 8px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            img{
+                margin-left: 100px;
+                padding-top: 10px;
+            }
+            .title{
+                
+                font-size: 18px;
+                font-family:cursive;
+            }
+        }
+    }
+}
+.MenuDescriptionAtelier{
+    background-color: aliceblue;
+}

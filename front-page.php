@@ -16,12 +16,21 @@
 </section>
 
 <section class="Archive">
- <img src="images/livre-ouvert.png" alt="">
+ 
 <?php wp_nav_menu(array(
     "menu"=>"bloc-archive",
     "container"=>"nav"
 ));?>
 </section>
+
+<section class="Atelier">
+    
+<?php wp_nav_menu(array(
+    "menu"=>"atelier",
+    "container"=>"nav"
+));?>
+</section>
+
 
 
 
