@@ -3,15 +3,7 @@
 * template name: Atelier
 */
 get_header(); ?>
-<?php
 
-if ( ! is_front_page() && !is_search()){
-
-get_template_part("template-parts/aside");
-
-}
-
-?>
 
 <main class="MenuDescriptionAtelier">
 <?php

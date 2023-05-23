@@ -745,7 +745,7 @@ footer .wp-block-quote {
   display: flex;
   flex-direction: column;
 }
-.Evenement #menu-item-226 {
+.Evenement #menu-item-328 {
   border-radius: 20px;
   background-color: #2D3192;
   border-bottom: solid white 30px;
@@ -753,13 +753,13 @@ footer .wp-block-quote {
   border-bottom-left-radius: 40px;
 }
 @media screen and (min-width: 900px) {
-  .Evenement #menu-item-226 {
+  .Evenement #menu-item-328 {
     width: 25vw;
     height: 40vh;
     margin-right: 20px;
   }
 }
-.Evenement #menu-item-231 {
+.Evenement #menu-item-329 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
   border-radius: 20px;
@@ -767,13 +767,13 @@ footer .wp-block-quote {
   border-top: solid #ffffff 15px;
 }
 @media screen and (min-width: 900px) {
-  .Evenement #menu-item-231 {
+  .Evenement #menu-item-329 {
     width: 25vw;
     height: 40vh;
     margin-right: 20px;
   }
 }
-.Evenement #menu-item-250 {
+.Evenement #menu-item-336 {
   background-color: #2D3192;
   border-bottom: solid white 30px;
   border-radius: 20px;
@@ -781,7 +781,7 @@ footer .wp-block-quote {
   border-top: solid #ffffff 15px;
 }
 @media screen and (min-width: 900px) {
-  .Evenement #menu-item-250 {
+  .Evenement #menu-item-336 {
     width: 25vw;
     height: 40vh;
   }
@@ -1119,12 +1119,7 @@ main.site__main .bloc__4w4 {
 }
 
 .MenuDescriptionAtelier img {
-  padding-left: 200px;
-}
-@media screen and (min-width: 900px) {
-  .MenuDescriptionAtelier img {
-    padding-left: 450px;
-  }
+  display: none;
 }
 .MenuDescriptionAtelier h1 {
   padding-left: 80px;
@@ -1156,6 +1151,14 @@ main.site__main .bloc__4w4 {
   text-align: center;
   font-size: 20px;
   border-bottom: solid white 3px;
+}
+
+h3 {
+  font-family: cursive;
+}
+
+#menu-aside_atelier a {
+  padding-bottom: 5px;
 }
 
 /* --------------------------------------------- layout */

@@ -264,11 +264,9 @@
    
 
     img{
-        padding-left: 200px;
+       
 
-        @media screen and (min-width: $largeur_bureau ){
-            padding-left: 450px;
-         }
+       display: none;
     }
 
     h1{
@@ -280,6 +278,8 @@
             padding-left: 340px;
          }
     }
+
+   
     p{
         font-size: 15px;
         color: white;
@@ -302,5 +302,13 @@
             border-bottom: solid white 3px;
         }
        
+    }
+}
+h3{
+    font-family: cursive;
+}
+#menu-aside_atelier{
+    a{
+        padding-bottom: 5px;
     }
 }
